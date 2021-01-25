@@ -22,7 +22,7 @@
             android:id="@+id/textViewLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="32dp"
+            android:layout_marginBottom="32dp"
             android:text="Login"
             android:textAlignment="center"
             android:textColor="#000000"
@@ -32,45 +32,56 @@
             android:id="@+id/textViewEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email address"
-            android:textColor="@android:color/darker_gray" />
+            android:text="Email address" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress"
-            android:textColor="@android:color/darker_gray" />
+            android:inputType="textEmailAddress" />
 
         <TextView
             android:id="@+id/textViewPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:textColor="@android:color/darker_gray" />
+            android:text="Password"/>
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword"
-            android:textColor="@android:color/darker_gray" />
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password"
+            android:textAlignment="textEnd" />
 
         <Button
             android:id="@+id/buttonLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Login" />
+            android:text="Login"
+            android:background="@drawable/button_primary"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/buttonToRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
         android:text="Register"
+        android:background="@drawable/button_primary"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_arrow_right"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
